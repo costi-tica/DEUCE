@@ -1,0 +1,140 @@
+body,html{
+    min-height: 100%;
+    background:#d3d2d2;
+    margin:0 auto;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 20;
+    display: block;
+    background-color: #ffffff;
+    height: 50px;
+    padding: 2px 15px 0px 15px;
+    box-shadow: 0px 1px 3px 1px #9b9b9b;
+}
+.header h1{
+    float:left;
+    margin: 7px 0 0 0;
+    padding-right: 4px;
+    font-size: 2em;
+    color: #0a507f;
+    font-family: 'Nunito Sans', sans-serif; 
+}
+.header p{
+    float: right;
+    margin:0;
+    padding-top:13px;
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-family: 'Segoe UI',Arial,sans-serif;
+}
+
+.nav{ 
+    width:auto;
+    float:left;
+    padding:6px;
+}
+.nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.nav>ul>li, .dropdown{
+    text-decoration: none;
+    float: left;
+}
+.nav>ul>li a, .dropdown-content a, .dropdown span{
+    color: #15a5e7;
+    float: left;
+    padding:10px 10px 7px 10px;
+    border-radius: 8px;
+    margin-right: 1px;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: .35s linear;
+    transition-property: background;
+}
+.dropdown{
+    margin-top: 9px;
+    float: left;
+    display: block;
+}
+.dropdown span{
+    float: initial;
+}
+.dropdown-content a{
+    float: initial;
+    text-align: center;
+    width: 100%;
+    margin-top: 1px;
+    display: block;
+}
+.dropdown-content{
+    position: relative;
+    top: 6px;
+    left: -12px;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px 1px #9b9b9b;
+    border-radius: 8px;
+}
+.nav a.active{
+    color:#b5f700;
+    background-color: #013168;
+}
+.nav a:hover:not(.active), .dropdown>span:hover{
+    color:#0a5283;
+    background-color: #2cbbfd;
+}
+.dropdown:hover>.dropdown-content{
+    display: block;
+}
+.dropdown>span{
+    cursor: pointer;
+}
+
+.main{
+    margin:auto;
+    margin-top:52px;
+    height:auto;
+    padding: 0px 10px 10px 10px;
+    overflow:hidden;
+    max-width: 1250px !important;
+    position: relative;
+    background-color: #f3f3f3;
+}
+
+.footer {
+    background-color: #eeeeee;
+    text-align: center;
+    font-size:1em;
+    margin:0;
+    padding: 15px 0 15px 0;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #9b9b9b;
+}
+
+@media all and (max-width: 1250px) {
+    .header p{
+        display: none;
+    }
+}
+@media all and (max-width: 920px) {
+    .header>a{
+        display: none;
+    }
+    .header{
+        height: auto;
+    }
+}

@@ -1,0 +1,79 @@
+.title{
+    width: calc(50% - 5px);
+    float:left;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2em;
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    background-color: rgb(255, 230, 6);
+    box-shadow: 0px 1px 4px 1px #6d6c6c;
+    border-radius: 6px;
+}
+
+.women, .men{
+    width: calc(50% - 5px);
+    float:left;
+    background-color: #084e7c;
+    box-shadow: 0px 1px 4px 1px #888888;
+    border-radius: 6px;
+}
+
+table tr td{
+    text-transform: capitalize;
+    font-family: 'PT Sans', sans-serif;
+    text-align:center;
+    color:white;
+    padding: 20px 0;
+}
+table tr td.rank{
+    font-size: 2em;
+    color:rgb(255, 230, 0);
+}
+table tr td.country{
+    width:20%;
+    text-align: left;
+    padding-left:4%;
+}
+table tr td.player{
+    width:25%;
+    font-size:1.2em;
+    text-align: left;
+    color: rgb(255, 230, 0);
+    padding-left:4%;
+
+}
+table tr td.points{
+    color:rgb(255, 230, 0);
+    font-size:1.2em;
+}
+
+table tr th{
+    font-size:1.7em;
+    padding: 20px 0 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+}
+table tr th.rank{
+    width:15%;
+    color:rgb(255, 230, 0);
+}
+table tr th.country{
+    width:20%;
+    text-align: left;
+    padding-left:4%;
+}
+table tr th.player{
+    width:25%;
+    text-align: left;
+    padding-left:4%;
+    color:rgb(255, 230, 0);
+}
+table tr th.age{
+    width:15%;
+}
+table tr th.points{
+    width:15%;
+    color:rgb(255, 230, 0);
+}
+

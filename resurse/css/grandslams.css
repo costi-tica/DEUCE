@@ -1,0 +1,145 @@
+.aus, .rg, .wim, .uso{
+    text-align: center;
+    text-transform: uppercase;
+    float:left;
+    width: 100%;
+    padding: 5px 0;
+    font-family: 'Nunito Sans', sans-serif; 
+    border-radius: 6px;
+    margin: 40px 0 40px;
+    box-shadow: 0px 1px 4px 2px #c0bebe;
+    font-size: 2em;
+}
+.aus{
+    border:none;
+    background-color: rgb(0, 195, 255);
+    margin: 20px 0 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}  
+.aus:hover{
+    background-color: rgb(0, 159, 207);
+}
+.rg{
+    background-color: rgb(255, 118, 27);
+    margin: 80px 0 40px;
+}
+.wim{
+    color: rgb(240, 240, 240);
+    background-color: #007b22;
+}
+.uso{
+    color: rgb(240, 240, 240) ;
+    background-color: rgb(0, 75, 189);
+}
+#arrow-down, #arrow-up{
+    font-size: 3em;
+    float:left;
+    color:rgb(0, 195, 255);
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    animation: arrow 3s infinite;
+}
+#arrow-up{
+    display: none;
+}
+@keyframes arrow{
+    50%{font-size: 4.5em;}
+}
+
+#grandContent{
+    width: inherit;
+    float: left;
+    height: 0;
+    transform: scaleY(0) scaleX(0.5);
+    transform-origin: center;
+    transition: all 1.3s ease-in-out;
+}
+#grandContent .men, #grandContent .women{
+    width: calc(50% - 5px);
+    margin-right: 10px;
+    float: left;
+    background-color: #96cc01;
+    border-radius: 6px;
+    box-shadow: 0px 1px 4px 2px #c0bebe;
+    overflow: hidden;
+}
+
+
+#grandContent .women{
+    margin-right: 0;
+}
+.men h1, .women h1{
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Nunito Sans', sans-serif; 
+}
+.men img, .women img{
+    width: 30%;
+    float: left;
+}
+.men .scoreText, .women .scoreText{
+    width: 40%;
+    max-height: 25px;
+    float: left;
+}
+.men .scoreText h2, .women .scoreText h2{
+    margin-top: 35px;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Nunito Sans', sans-serif; 
+}
+.men .scoreText p, .women .scoreText p{
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'Nunito Sans', sans-serif; 
+}
+.hr{
+    border-left: none;
+    border-top:2px solid #d8d8d8;
+    width: calc(50% - 35px);
+    float:left;
+}
+.main h4{
+    float:left;
+    margin: 0;
+    width: 70px;
+    font-size: 0.9em;
+    text-align: center;
+    color: rgb(150, 150, 150);
+    font-family: 'Nunito Sans', sans-serif; 
+}
+
+
+@media screen and (max-width: 1250px) {
+    .men h1, .women h1{
+        font-size: 2.5vw;
+    }
+    .men .scoreText p, .women .scoreText p{
+        font-size: 2vw;
+    }
+    .men .scoreText h2, .women .scoreText h2{
+        margin: 0;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #grandContent .men, #grandContent .women{
+        width: 100%;
+    }
+    #grandContent .women{
+        margin-top: 10px;
+    }
+    .men h1, .women h1{
+        font-size: 4vw;
+    }
+    .men .scoreText p, .women .scoreText p{
+        font-size: 5vw;
+    }
+    .men .scoreText h2, .women .scoreText h2{
+        font-size: 9vw;
+    }
+}

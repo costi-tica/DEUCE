@@ -1,0 +1,169 @@
+.no1Card{
+    float:left;
+    width:calc(50% - 5px); 
+    height: 255px;
+    overflow: hidden;
+    margin: 0 0 10px 0;;
+    position: relative;
+    box-shadow: 0px 1px 3px 1px #9b9b9b;
+    background-color: white;
+    border-radius: 6px;
+}
+.first{
+    margin-right: 10px;
+}
+.no1Card>img{
+    float: right;
+    height: 100%;
+}
+.rankCard{
+    float: left;
+    height: 225px;
+    width: 25%;
+    margin:15px 17px 15px 0px;
+    border-right:1px solid #ccc;
+}
+.rankCard p{
+    margin: 0;
+    text-align: center; 
+    font-size: 6.7em;
+    color: #24475e;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.rankCard h2{
+    margin:0;
+    padding-top:3px;
+    text-align: center;
+    font-size: 1.55em;
+    color: #0a69a8;
+    font-family: 'PT Sans', sans-serif;
+}
+.infoCard{
+    float: left;
+    width:30%;
+}
+.rankCard img{
+    width:60px;
+    height:40px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 1px 4px 1px #888888;
+}
+
+.infoCard h2{ 
+    font-size: 2em;
+    color:#0a69a8;   
+    padding:15px 0 0 0;       
+    margin:0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.infoCard>p{
+    font-size: 2.7em; 
+    color:#0a507f;    
+    margin:0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.infoPoints{
+    float:left;
+    margin-top:20px;
+    border-left: 1px solid #ccc;
+}
+.infoPoints>p{
+    margin:0;
+    color:#9b9b9b;
+    padding:3px;
+    font-size:1em;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.latestPhotos{
+    float:left;
+    width:100%; 
+    padding-bottom:10px;
+    overflow: auto;
+    margin: 10px 0 10px 0;
+    position: relative;
+    background-color: #96cc01;
+    box-shadow: 1px 1px 4px 2px #9b9b9b;
+    border-radius: 6px;
+}
+.latestPhotos h2 {
+    margin: 5px 5px 5px 10px;
+    font-size:1.6em;
+    font-family: 'Nunito Sans', sans-serif;
+    color:black;
+}
+.item{
+    float:left;
+    width: calc(33.33% - 20px);
+    overflow: hidden;
+    margin: 0 10px 0 10px;
+    position: relative;
+}
+.item img{
+    width: 100%;
+}
+.item h3{
+    position: absolute;
+    font-size: 1em;
+    margin:0 0 4px 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color:white;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: rgba(0,0,0,.6);
+}
+.news{
+    float:left;
+    width:100%; 
+    padding-bottom:10px;
+    overflow: auto;
+    margin: 10px 0 0 0;
+    position: relative;
+    box-shadow: 1px 1px 4px 2px #9b9b9b;
+    background-color: #30b1ec;
+    border-radius: 6px;
+}
+.news h2{
+    margin: 5px 5px 5px 10px;
+    font-size:1.6em;
+    font-family: 'Nunito Sans', sans-serif;
+    color:rgb(0, 0, 0);
+}
+.item a{
+    text-decoration: none;
+}
+.item p{
+    font-size:0.8em;
+    font-family: 'Segoe UI',Arial,sans-serif;
+    color: #444444;
+    margin:0;
+}
+.new_item h3{
+    bottom: 33px;
+}
+
+@media all and (max-width: 1250px) {
+    .no1Card{
+        width: 100%;
+    }
+}
+@media all and (max-width: 610px) {
+    .no1Card>img{
+        height: auto;
+        width: 40%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .rankCard h2{
+        font-size: 1.2em;
+    }
+    .rankCard p{
+        font-size: 6em;
+    }
+}

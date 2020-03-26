@@ -4,9 +4,10 @@
 <head>
     <title>DEUCE</title>
     <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:800|PT+Sans:700" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="resurse/css/layout.css">
     <link rel="stylesheet" type="text/css" href="resurse/css/photos.css">
     <script type="text/javascript" src="resurse/js/javascript.js"></script>
@@ -21,16 +22,17 @@
             <a href="index.html"><h1>DEUCE</h1></a>
 
             <nav class="nav">
+                <i class="fas fa-times closeMenu" onclick="closeMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="rankings.html">RANKINGS</a></li>
                     <li><a href="tournaments.html">TOURNAMENTS</a></li>
                     <li><a href="grandslams.html">GRAND SLAMS</a></li>
-                    <li><a href="photos.html" class="active">PHOTOS</a></li>
+                    <li><a href="photos.html"  class="active">PHOTOS</a></li>
                     <li><a href="news.html">NEWS</a></li>
                     <div class="dropdown">
                         <span>SAME STUFF</span>
-                        <div class="dropdown-content">
+                        <div class="ddContent">
                             <ul>
                                 <li><a href="rankings.html">RANKINGS</a></li>
                                 <li><a href="tournaments.html">TOURNAMENTS</a></li>
@@ -40,9 +42,11 @@
                         </div>
                     </div>
                 </ul>
+
+                <p>BEST TENNIS NEWS RIGHT HERE<p>
             </nav>
 
-            <p>BEST TENNIS NEWS RIGHT HERE<p>
+            <i class="fas fa-bars openMenu" onclick="openMenu()"></i>
         </header>
 
         <main class="main">
@@ -104,14 +108,18 @@
                     <img  class="newSrc3"  src="resurse/img/latest-news/tsitsi02.jpg">
                     <img  class="newSrc3"  src="resurse/img/latest-news/federer02.jpg">
                 </div>
-
+ 
             </section>
+
+            <div class="vLine"></div>
+            <p>TO BE CONTINUED</p>
+            <div class="vLine"></div>
 
         </main>
 
         <div>&nbsp;</div>
 
-        <div class="footer">Copyright &copy; 2020 all rights reserved.</div>
+        <footer class="footer">Copyright &copy; 2020 all rights reserved.</footer>
 
     </div>
 

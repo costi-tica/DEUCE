@@ -21,6 +21,7 @@
             <a href="index.html"><h1>DEUCE</h1></a>
 
             <nav class="nav">
+                <i class="fas fa-times closeMenu" onclick="closeMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="rankings.html">RANKINGS</a></li>
@@ -30,7 +31,7 @@
                     <li><a href="news.html">NEWS</a></li>
                     <div class="dropdown">
                         <span>SAME STUFF</span>
-                        <div class="dropdown-content">
+                        <div class="ddContent">
                             <ul>
                                 <li><a href="rankings.html">RANKINGS</a></li>
                                 <li><a href="tournaments.html">TOURNAMENTS</a></li>
@@ -40,9 +41,11 @@
                         </div>
                     </div>
                 </ul>
+
+                <p>BEST TENNIS NEWS RIGHT HERE<p>
             </nav>
 
-            <p>BEST TENNIS NEWS RIGHT HERE<p>
+            <i class="fas fa-bars openMenu" onclick="openMenu()"></i>
         </header>
 
         <main class="main">
@@ -53,20 +56,20 @@
 
             <section id="grandContent">
                 <div class="men">
-                    <h1>Men's Final</h1>
+                    <h2>Men's Final</h2>
                     <img src="resurse/img/trophies/djokovic.jpg">
                     <div class="scoreText">
-                        <h2>VS</h2>
+                        <h3>VS</h3>
                         <p>6-3 </br> 6-2 </br> 6-3</p>
                     </div>
                     <img src="resurse/img/trophies/nadal.jpg">
                 </div>
 
                 <div class="women">
-                    <h1>Women's Final</h1>
+                    <h2>Women's Final</h2>
                     <img src="resurse/img/trophies/osaka.jpg">
                     <div class="scoreText">
-                        <h2>VS</h2>
+                        <h3>VS</h3>
                         <p>7-6(2) </br>  5-7 </br>  6-4</p>
                     </div>
                     <img src="resurse/img/trophies/kvitova-ao.jpg">
@@ -76,24 +79,20 @@
             <i class="fas fa-angle-double-down" id="arrow-down"></i>
             <i class="fas fa-angle-double-up" id="arrow-up"></i>
 
-<!-- ignorati urmatoarea sectiune, nu am modificat -->
-
-            <h1 class="rg">roland garros</h1>
+            <button class="rg" type="button">roland garros</button>
             <hr class="hr">
-            <h4>26.05.20</h4>
+            <p>26.05.20</p>
             <hr class="hr">
 
-            <h1 class="wim">wimbledon</h1>
+            <button class="wim" type="button">wimbledon</button>
             <hr class="hr">
-            <h4>01.07.20</h4>
+            <p>01.07.20</p>
             <hr class="hr">
 
-            <h1 class="uso">us open</h1>
+            <button class="uso" type="button">us open</button>
             <hr class="hr">
-            <h4>26.08.20</h4>
+            <p>26.08.20</p>
             <hr class="hr" style="margin-bottom:40px;">
-
-<!-- pana aici -->
 
         </main>
 

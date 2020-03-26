@@ -16,12 +16,12 @@
     float:left;
     margin-top:10px;
 }
-.tournamentsTable h1{
+.tournamentsTable h2{
     text-transform: uppercase;
     width: 100%;
     float:left;
-    padding: 15px 10px;
-    margin:0;
+    padding: 10px 10px;
+    margin: 0 0 10px 0;
     color: rgb(0, 0, 0);
     font-size:1.5em;
     background-color: rgb(255, 230, 6);
@@ -51,25 +51,74 @@ table tr th.champ{
     animation: colorSwitch 4s infinite;
 }
 @keyframes colorSwitch{
-    50%  {color:rgb(255, 0, 0);}
+    50%  {color:rgb(75, 190, 22);}
 }
 
 table tr td{
     text-transform: capitalize;
-    font-size:1.1em;
+    font-size: 1.1em;
     font-family: 'PT Sans', sans-serif;
     text-align:left;
     color:rgb(255, 255, 255);
     padding: 20px 0;
 }
-table tr td.tour{
+table tr td:first-child{
     padding: 20px 0 20px 10px;  
 }
 table tr td span.man{
-    color:rgb(251, 255, 0);
+    color:rgb(0, 194, 10);
     font-size: 1.3em;
 }
 table tr td span.woman{
-    color:rgb(255, 59, 134);
+    color:rgb(251, 255, 0);
     font-size: 1.3em;
+}
+
+@media all and (max-width: 950px){
+    table thead{
+        display: none;
+    }
+    table tr td{
+        display: block;
+        text-align: left;
+        padding: 10px 0 10px 10px;
+    }
+    table tr td span.woman{
+        margin-left: 47%;
+    }
+
+    table tr td:first-child::before{
+        content: "TOURNAMENT:  ";
+    }
+    table tr td:nth-child(2)::before{
+        content: "CHAMPION:  ";
+    }
+    table tr td:nth-child(3)::before{
+        content: "COUNTRY:  ";
+    }
+    table tr td:nth-child(4)::before{
+        content: "DATE:  ";
+    }
+
+    table tr td::before{
+        width: 47%;
+        float: left;
+    }
+    table tr:nth-child(even){
+        background-color: #0b6bac;
+    }
+}
+@media all and (max-width: 950px){
+    .col1, .col2{
+        width: calc(50% - 5px);
+    }
+    .col1{
+        margin-left: 0;
+    }
+    .tournamentsTable{
+        width:100%;
+    }
+    .tournamentsTable h2{
+        font-size:1em;
+    }
 }

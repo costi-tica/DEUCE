@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="resurse/css/layout.css">
     <link rel="stylesheet" type="text/css" href="resurse/css/news.css">
+    <script type="text/javascript" src="resurse/js/javascript.js"></script>
     <link rel="shortcut icon" type="image/png" href="#SSS">
 </head>
 
@@ -20,6 +21,7 @@
             <a href="index.html"><h1>DEUCE</h1></a>
 
             <nav class="nav">
+                <i class="fas fa-times closeMenu" onclick="closeMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="rankings.html">RANKINGS</a></li>
@@ -29,7 +31,7 @@
                     <li><a href="news.html" class="active">NEWS</a></li>
                     <div class="dropdown">
                         <span>SAME STUFF</span>
-                        <div class="dropdown-content">
+                        <div class="ddContent">
                             <ul>
                                 <li><a href="rankings.html">RANKINGS</a></li>
                                 <li><a href="tournaments.html">TOURNAMENTS</a></li>
@@ -39,12 +41,15 @@
                         </div>
                     </div>
                 </ul>
+
+                <p>BEST TENNIS NEWS RIGHT HERE<p>
             </nav>
 
-            <p>BEST TENNIS NEWS RIGHT HERE<p>
+            <i class="fas fa-bars openMenu" onclick="openMenu()"></i>
         </header>
 
         <main class="main">
+            
             <section class="news">
                 <div class="title">
                     <img src="resurse/img/latest-news/osaka-news.jpg">

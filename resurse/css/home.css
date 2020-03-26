@@ -98,7 +98,7 @@
 .item{
     float:left;
     width: calc(33.33% - 20px);
-    overflow: hidden;
+    overflow: hidden; 
     margin: 0 10px 0 10px;
     position: relative;
 }

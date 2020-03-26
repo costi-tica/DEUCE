@@ -86,6 +86,9 @@ function changeSlide(x){
 function prevNext(n) {
 	showSlides(slideIndex += n);
 }
+// function autoShowSlides(){
+// 	showSlides(++slideIndex);
+// }
 
 function showSlides(n){
 	var i=0;
@@ -102,4 +105,31 @@ function showSlides(n){
 		slideIndex = n;
 		prevN = n;
 	}, 500);
+	// setTimeout(autoShowSlides, 2000);
+}
+
+//rankings
+
+function switchTables(n){
+	var menTable = document.getElementsByClassName("men");
+	var womenTable = document.getElementsByClassName("women");
+
+	if (n == 1){
+		menTable[0].style.display = "none";
+		womenTable[0].style.display = "table";
+	}
+	else{
+		womenTable[0].style.display = "none";
+		menTable[0].style.display = "table";
+	}
+}
+
+
+// menu
+
+function openMenu(){
+	document.getElementsByClassName("nav")[0].style.right = "0px";
+}
+function closeMenu(){
+	document.getElementsByClassName("nav")[0].style.right = "-250px";
 }

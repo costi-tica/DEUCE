@@ -12,11 +12,12 @@
 .news .title img{
     width: 100%;
 }
-.news .title h1{
+.news .title h2{
+    font-size: 2vw;
     position: absolute;
     text-transform: uppercase;
     color:rgb(252, 252, 252);
-    bottom: 100px;
+    bottom: 20%;
     left: 0;
     right: 0;
     padding: 25px;
@@ -28,4 +29,21 @@
     margin:0;
     padding: 15px 20px 20px;
     font-family: 'Nunito Sans', sans-serif;
+}
+@media all and (max-width: 1040px){
+    .news .title h2{
+        position: initial;
+        background-color: rgba(29, 29, 29, 0.541);
+        margin-top: -5px;
+    }
+}
+@media all and (max-width: 630px){
+    .news .title h2{
+        font-size: 3.5vw;
+        padding: 15px;
+    }
+    .news p{
+        text-align: justify;
+        font-size: .9em;
+    }
 }

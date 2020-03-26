@@ -9,15 +9,22 @@
     background-color: rgb(255, 230, 6);
     box-shadow: 0px 1px 4px 1px #6d6c6c;
     border-radius: 6px;
+    border: 0;
+}
+.button{
+    display: none;
+    cursor: pointer;
 }
 
 .women, .men{
+    margin-top: 10px;
     width: calc(50% - 5px);
     float:left;
     background-color: #084e7c;
     box-shadow: 0px 1px 4px 1px #888888;
     border-radius: 6px;
 }
+
 
 table tr td{
     text-transform: capitalize;
@@ -26,24 +33,15 @@ table tr td{
     color:white;
     padding: 20px 0;
 }
-table tr td.rank{
+table tr td:first-child{
     font-size: 2em;
     color:rgb(255, 230, 0);
 }
-table tr td.country{
-    width:20%;
-    text-align: left;
-    padding-left:4%;
-}
-table tr td.player{
-    width:25%;
+table tr td:nth-child(3){
     font-size:1.2em;
-    text-align: left;
     color: rgb(255, 230, 0);
-    padding-left:4%;
-
 }
-table tr td.points{
+table tr td:nth-child(5){
     color:rgb(255, 230, 0);
     font-size:1.2em;
 }
@@ -60,13 +58,9 @@ table tr th.rank{
 }
 table tr th.country{
     width:20%;
-    text-align: left;
-    padding-left:4%;
 }
 table tr th.player{
     width:25%;
-    text-align: left;
-    padding-left:4%;
     color:rgb(255, 230, 0);
 }
 table tr th.age{
@@ -77,3 +71,61 @@ table tr th.points{
     color:rgb(255, 230, 0);
 }
 
+@media all and (max-width: 970px){
+    .men, .women{
+        width: 100%;
+    }
+    .women{
+        display: none;
+    }
+    .title{
+        font-size: 1.3em;
+    }
+    .text{
+        display: none;
+    }
+    .button{
+        display: block;
+    }
+}
+@media all and (max-width: 450px){
+    table thead{
+        display: none;
+    }
+    table tr td{
+        display: block;
+        text-align: left;
+        padding: 10px 0 10px 10px;
+    }
+    table tr td:first-child::before{
+        content: "RANK:  ";
+    }
+    table tr td:nth-child(2)::before{
+        content: "COUNTRY:  ";
+    }
+    table tr td:nth-child(3)::before{
+        content: "PLAYER:  ";
+    }
+    table tr td:nth-child(4)::before{
+        content: "AGE:  ";
+    }
+    table tr td:nth-child(5)::before{
+        content: "POINTS: ";
+    }
+
+    table tr td::before{
+        width: 47%;
+        float: left;
+    }
+    table tr td:first-child{
+        font-size: 1.2em;
+    }
+    table tr:nth-child(even){
+        background-color: #0b6bac;
+    }
+}
+@media all and (min-width: 970px){
+    .men, .women{
+        display: table !important;
+    }
+}

@@ -4,10 +4,12 @@
 <head>
     <title>DEUCE</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:800|PT+Sans:700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="resurse/css/layout.css">
     <link rel="stylesheet" type="text/css" href="resurse/css/tournaments.css">
+    <script type="text/javascript" src="resurse/js/javascript.js"></script>
     <link rel="shortcut icon" type="image/png" href="#">
 </head>
 
@@ -19,6 +21,8 @@
             <a href="index.html"><h1>DEUCE</h1></a>
 
             <nav class="nav">
+                <i class="fas fa-times closeMenu" onclick="closeMenu()"></i>
+
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="rankings.html">RANKINGS</a></li>
@@ -28,7 +32,7 @@
                     <li><a href="news.html">NEWS</a></li>
                     <div class="dropdown">
                         <span>SAME STUFF</span>
-                        <div class="dropdown-content">
+                        <div class="ddContent">
                             <ul>
                                 <li><a href="rankings.html">RANKINGS</a></li>
                                 <li><a href="tournaments.html">TOURNAMENTS</a></li>
@@ -38,9 +42,11 @@
                         </div>
                     </div>
                 </ul>
+
+                <p>BEST TENNIS NEWS RIGHT HERE<p>
             </nav>
 
-            <p>BEST TENNIS NEWS RIGHT HERE<p>
+            <i class="fas fa-bars openMenu" onclick="openMenu()"></i>
         </header>
 
         <main class="main">
@@ -48,42 +54,46 @@
             <div style="height: 10px;">&nbsp;</div>
 
             <section class="tournamentsTable">
-                <h1>Last season's tournaments champions:</h1>
+                <h2>Last season's tournaments champions:</h2>
 
                 <table>
-                    <tr>
-                        <th class="tour">Tournament</th>
-                        <th class="champ">Champion</th>
-                        <th>Country</th>
-                        <th>Date</th>
-                    </tr>
-                    <tr>
-                        <td class="tour">shenzhen</td>  <td class="champ"><span class="woman">sabalenka</span></td>  <td>china</td>  <td>30.12.1018</td>
-                    </tr>
-                    <tr>
-                        <td class="tour">brisbane</td>  <td class="champ"><span class="man">kei nishikori</span> <br> <span class="woman">karolina pliskova</span></td>  <td>australia</td>  <td>31.12.2018</td>
-                    </tr>
-                    <tr>
-                        <td class="tour">doha</td>  <td class="champ"><span class="man">roberto bautista agut</span></td>  <td>qatar</td>  <td>31.12.2018</td>
-                    </tr>
-                    <tr>
-                        <td class="tour">pune</td>  <td class="champ"><span class="man">kevin anderson</span></td>  <td>india</td>  <td>31.12.2018</td>
-                    </tr>
-                    <tr>
-                        <td class="tour">auckland</td>  <td class="champ"><span class="man">tennys sandgren</span> <br> <span class="woman">julia georges</span></td>  <td>new zealand</td>  <td>31.12.2018</td>
-                    </tr>
-                    <tr>
-                        <td class="tour">sydney</td>  <td class="champ"><span class="man">ales de minaur</span> <br> <span class="woman">petra kvitova</span></td>  <td>australia</td>  <td>6.01.2019</td>
-                    </tr>
-                    <tr>
-                        <td class="tour">miami</td>  <td class="champ"><span class="man">roger federer</span> <br> <span class="woman">ashley barty</span></td>  <td>usa</td>  <td>7.03.2018</td>
-                    </tr>
-                    <tr>
-                        <td class="tour">indian wells</td>  <td class="champ"><span class="man">dominic thiem</span> <br> <span class="woman">bianca andreescu</span></td>  <td>usa</td>  <td>15.03.2018</td>
-                    </tr>
-                    <tr>
-                        <td class="tour">charleston</td>  <td class="champ"><span class="woman">madison keys</span></td>  <td>usa</td>  <td>7.01.2018</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th class="tour">Tournament</th>
+                            <th class="champ">Champion</th>
+                            <th>Country</th>
+                            <th>Date</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>shenzhen</td>  <td><span class="woman">sabalenka</span></td>  <td>china</td>  <td>03.01.2019</td>
+                        </tr>
+                        <tr>
+                            <td>brisbane</td>  <td><span class="man">kei nishikori</span> <br> <span class="woman">karolina pliskova</span></td>  <td>australia</td>  <td>10.01.2019</td>
+                        </tr>
+                        <tr>
+                            <td>doha</td>  <td><span class="man">roberto bautista agut</span></td>  <td>qatar</td>  <td>03.01.2019</td>
+                        </tr>
+                        <tr>
+                            <td>pune</td>  <td><span class="man">kevin anderson</span></td>  <td>india</td>  <td>03.01.2019</td>
+                        </tr>
+                        <tr>
+                            <td>auckland</td>  <td><span class="man">tennys sandgren</span> <br> <span class="woman">julia georges</span></td>  <td>new zealand</td>  <td>03.01.2019</td>
+                        </tr>
+                        <tr>
+                            <td>sydney</td>  <td><span class="man">ales de minaur</span> <br> <span class="woman">petra kvitova</span></td>  <td>australia</td>  <td>6.01.2019</td>
+                        </tr>
+                        <tr>
+                            <td>miami</td>  <td><span class="man">roger federer</span> <br> <span class="woman">ashley barty</span></td>  <td>usa</td>  <td>7.03.2019</td>
+                        </tr>
+                        <tr>
+                            <td>indian wells</td>  <td><span class="man">dominic thiem</span> <br> <span class="woman">bianca andreescu</span></td>  <td>usa</td>  <td>15.03.2019</td>
+                        </tr>
+                        <tr>
+                            <td>charleston</td>  <td><span class="woman">madison keys</span></td>  <td>usa</td>  <td>7.01.2019</td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
 

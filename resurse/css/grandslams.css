@@ -20,6 +20,9 @@
 .aus:hover{
     background-color: rgb(0, 159, 207);
 }
+.rg, .wim, .uso{
+    border:none;
+}
 .rg{
     background-color: rgb(255, 118, 27);
     margin: 80px 0 40px;
@@ -66,11 +69,10 @@
     overflow: hidden;
 }
 
-
 #grandContent .women{
     margin-right: 0;
 }
-.men h1, .women h1{
+.men h2, .women h2{
     text-align: center;
     margin: 0;
     font-size: 2.5em;
@@ -85,7 +87,7 @@
     max-height: 25px;
     float: left;
 }
-.men .scoreText h2, .women .scoreText h2{
+.men .scoreText h3, .women .scoreText h3{
     margin-top: 35px;
     text-align: center;
     font-size: 2.5em;
@@ -102,7 +104,7 @@
     width: calc(50% - 35px);
     float:left;
 }
-.main h4{
+.main>p{
     float:left;
     margin: 0;
     width: 70px;
@@ -114,14 +116,15 @@
 
 
 @media screen and (max-width: 1250px) {
-    .men h1, .women h1{
+    .men h2, .women h2{
         font-size: 2.5vw;
     }
     .men .scoreText p, .women .scoreText p{
+        margin: 0;
         font-size: 2vw;
     }
-    .men .scoreText h2, .women .scoreText h2{
-        margin: 0;
+    .men .scoreText h3, .women .scoreText h3{
+        margin-top: 20px;
         font-size: 3vw;
     }
 }
@@ -133,13 +136,13 @@
     #grandContent .women{
         margin-top: 10px;
     }
-    .men h1, .women h1{
+    .men h2, .women h2{
         font-size: 4vw;
     }
     .men .scoreText p, .women .scoreText p{
         font-size: 5vw;
     }
-    .men .scoreText h2, .women .scoreText h2{
+    .men .scoreText h3, .women .scoreText h3{
         font-size: 9vw;
     }
 }

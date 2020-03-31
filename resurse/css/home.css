@@ -63,6 +63,9 @@
     margin:0;
     font-family: 'Nunito Sans', sans-serif;
 }
+.infoCard>p:nth-child(2){
+    font-size: 1.5em;
+}
 
 
 .infoPoints{
@@ -77,6 +80,12 @@
     font-size:1em;
     text-transform: uppercase;
     font-family: 'Nunito Sans', sans-serif;
+}
+.infoPoints>p:nth-child(1){
+    border-bottom:1px solid #ccc;
+}
+.infoPoints>p:nth-child(2){
+    letter-spacing: 2px;
 }
 .latestPhotos{
     float:left;

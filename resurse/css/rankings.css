@@ -11,6 +11,9 @@
     border-radius: 6px;
     border: 0;
 }
+.title:nth-of-type(1), .title:nth-of-type(3){
+    margin-right: 10px;
+}
 .button{
     display: none;
     cursor: pointer;
@@ -23,6 +26,9 @@
     background-color: #084e7c;
     box-shadow: 0px 1px 4px 1px #888888;
     border-radius: 6px;
+}
+.men{
+    margin-right:10px;
 }
 
 

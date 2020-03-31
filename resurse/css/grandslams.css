@@ -104,6 +104,9 @@
     width: calc(50% - 35px);
     float:left;
 }
+.hr:nth-of-type(6){
+    margin-bottom:40px;
+}
 .main>p{
     float:left;
     margin: 0;

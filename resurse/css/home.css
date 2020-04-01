@@ -176,3 +176,11 @@
         font-size: 6em;
     }
 }
+@media all and (max-width: 850px) {
+    .item h3{
+        position:initial;
+        font-size: 12px;
+        background-color: rgba(47, 65, 62, 0.61);
+        margin-top: -5px;
+    }
+}

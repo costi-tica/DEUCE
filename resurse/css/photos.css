@@ -5,6 +5,9 @@
     padding: 0 0 10px;
     border-radius: 8px;
 }
+.photoSlide>h2{
+    display: none;
+}
 .photoSlide ul{
     width:100%;
     padding:0;
